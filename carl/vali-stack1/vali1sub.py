@@ -3,13 +3,7 @@
 Created on Tue Jul  7 18:40:37 CEST 2015
 
 @author: Elena Cuoco
-simple starting script, without the use of MNE
-Thanks to @author: alexandrebarachant for his wornderful starting script
-average 0.816735586598
-average 0.835100413117
-average 0.854357544601
-average 0.904356722514
-average 0.911726630906
+
 """
 import h5py
 import numpy as np
