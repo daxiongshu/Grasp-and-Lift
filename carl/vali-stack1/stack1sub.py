@@ -94,16 +94,17 @@ h5f.close()
 
 # we need to generate the features for the test set
 # this only need to be done once.
-#Xt=np.array(sub[real.columns.values])
-#Xt=gendata(Xt)
+Xt=np.array(sub[real.columns.values])
+Xt=gendata(Xt)
 
-#h5f=h5py.File('h5file/vali1sub.h5','w')
-#h5f.create_dataset('dataset_1', data=Xt)
-#h5f.close()
-
-h5f=h5py.File('h5file/vali1sub.h5','r')
-Xt=h5f['dataset_1'][:]
+h5f=h5py.File('h5file/vali1sub.h5','w')
+h5f.create_dataset('dataset_1', data=Xt)
 h5f.close()
+
+#next time we can simple load the data
+#h5f=h5py.File('h5file/vali1sub.h5','r')
+#Xt=h5f['dataset_1'][:]
+#h5f.close()
 
 print X.shape, Xt.shape
 xx=[]
