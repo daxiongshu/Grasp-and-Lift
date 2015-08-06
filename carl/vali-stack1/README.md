@@ -1,18 +1,14 @@
 Description:
 
-vali1.py: this is a validation code of a base model
-
-for each subject, series 1~6 are used as train and series 7,8 are used as validation
-
-all the features used here are from the past of the frame so no future leakage
+vali1.py: this is a validation code of a base model.
+For each subject, series 1~6 are used as train and series 7,8 are used as validation
+All the features used here are from the past of the frame so no future leakage
 
 vali1sub.py: the same model as vali1.py but training on all training data and predict the test data
-
 it generates a submission file vali1sub.csv, which is a legit submission
 
 stack1cv.py: this is a validation code of a stacking model.
-
-note that this model is fundamentally different from a base model.
+Note that this model is fundamentally different from a base model.
 It is not a per subject model.
 Predictions of the series 7,8 of all subjects are contenated to one big matrix as the training data.
 Each row and row still maintains the time order except for boundries of series but it doesn't matter.
