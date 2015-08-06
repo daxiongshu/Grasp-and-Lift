@@ -20,5 +20,5 @@ This stacking only use predictions from the past of the frame so no future leaka
 stack1sub.py: the same model as stack1cv.py but training on all validation data and predict the test data
 it generates a submission file stack1sub.csv, which is a legit submission
 
-vali1: cv auc 0.911
+vali1: cv auc 0.911  lb auc 0.926
 stack1: cv auc 0.931 lb auc 0.950
