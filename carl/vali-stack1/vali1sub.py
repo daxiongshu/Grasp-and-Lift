@@ -118,6 +118,7 @@ def get_fea(X,cat,sub):
             Xt[i,:]=np.mean(X[i-m3:i-m2,:],axis=0)
             Xs[i,:]=np.mean(X[i-m4:i-m3,:],axis=0)
     tmp=np.hstack((X,Xm,Xt,Xu,Xs))
+    # so next time we can simply load the data
     h5f=h5py.File('h5sub/%s_%d.h5'%(cat,sub),'w')
     h5f.create_dataset('dataset_1', data=tmp)
     h5f.close()
