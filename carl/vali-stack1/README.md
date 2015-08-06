@@ -7,11 +7,11 @@ all the features used here are from the past of the frame so no future leakage
 vali1sub.py: the same model as vali1.py but training on all training data and predict the test data
 it generates a submission file vali1sub.csv, which is a legit submission
 
-stack1cv.py: this is a validation code of a stacking model
-note that this model is fundamentally different from a base model
+stack1cv.py: this is a validation code of a stacking model.
+note that this model is fundamentally different from a base model.
 It is not a per subject model.
 Predictions of the series 7,8 of all subjects are contenated to one big matrix as the training data.
-Each row and row still maintains the time order except for boundries of series but it doesn't matter
+Each row and row still maintains the time order except for boundries of series but it doesn't matter.
 Then it performs a 2-fold cross validation fashion.
 First, use 1st half data to train and predict 2nd half data and vice versa.
 We can not use Kfold random split here because we need to maintain the time order.
