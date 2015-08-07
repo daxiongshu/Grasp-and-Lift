@@ -184,8 +184,8 @@ cols = ['HandStart','FirstDigitTouch',
         'Replace','BothReleased']
 
 #######number of subjects###############
-#subjects = range(1,13)
-subjects = range(1,3)
+subjects = range(1,13)
+#subjects = range(1,3)
 auc_tot = []
 pred_tot = []
 y_tot = []
