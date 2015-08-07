@@ -9,3 +9,5 @@ usage: python combine.py cv1.csv cv2.csv
 weight.py ensembles two submissions with the weights found above
 
 valid3.py is the same as valid1.py except that channel 2 is used for filter.
+
+stack3.py uses the weighted average of predictions of valid3.py and valid1.py
