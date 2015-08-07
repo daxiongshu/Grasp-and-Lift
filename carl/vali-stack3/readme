@@ -1,0 +1,11 @@
+This directory contains code that generates submission stack3sub.csv 
+
+validation 0.94018, LB 0.95649
+This is a normal base model + normal stack model which uses no future leakage.
+
+combine.py searches best weight to average two submissions based on cv predictions
+usage: python combine.py cv1.csv cv2.csv
+
+weight.py ensembles two submissions with the weights found above
+
+valid3.py is the same as valid1.py except that channel 2 is used for filter.
