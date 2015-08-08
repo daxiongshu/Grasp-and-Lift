@@ -6,3 +6,5 @@ stack7 uses predictions from vali1 (legal, from past only) and vali7 (both past 
 stack7 uses past predictions from either vali7 if no future leakage or vali1 otherwise
 
 stack7 validation 0.953 lb 0.966
+
+# this is wrong. line 84 of stack7sub is wrong. it should be return np.hstack((Xp,Xm,Xt,Xu,Xs))
