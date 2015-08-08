@@ -1,0 +1,8 @@
+This is an attempt of the reinforced stacking, I think it is legit
+
+vali7 uses future features so it is not a legal submission itself
+
+stack7 uses predictions from vali1 (legal, from past only) and vali7 (both past and future)
+stack7 uses past predictions from either vali7 if no future leakage or vali1 otherwise
+
+stack7 validation 0.953 lb 0.966
