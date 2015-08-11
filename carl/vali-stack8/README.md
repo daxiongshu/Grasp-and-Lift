@@ -9,4 +9,6 @@ vali8 uses channel 2 for filtering
 
 note that vali7 also uses future features but it is correct, the error occurs in stack7
 
-stack8 fixed the problem of stack7
+stack8 fixed the problem of stack7. Specifically,  line 84 in stack8sub.py
+
+return np.hstack((Xp,Xm,Xt,Xu,Xs)
