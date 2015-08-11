@@ -15,4 +15,4 @@ return np.hstack((Xp,Xm,Xt,Xu,Xs) # correct
 
 return np.hstack((X,Xm,Xt,Xu,Xs) # wrong
 
-#stack8sub.csv is a legit submission, which gets 0.9468 validation score
+#stack8sub.csv is a legit submission, which gets 0.943 validation score
