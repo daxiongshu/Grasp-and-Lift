@@ -39,7 +39,7 @@ for fname in os.listdir('cv'):
     
     sub2=pd.read_csv('cv/'+fname)
     
-    subject=str(fname.split('.')[0][10:])
+    subject=str(fname.split('_')[1][3:])
     mask=np.array(real['subject']==subject)
     if start[int(subject)]==0:
         start[int(subject)]=1        
