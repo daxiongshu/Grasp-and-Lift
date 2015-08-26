@@ -153,7 +153,6 @@ cols = ['HandStart','FirstDigitTouch',
 
 
 #######number of subjects###############
-subjects = range(5,6)
 ids_tot = []
 pred_tot = []
 
@@ -165,7 +164,7 @@ for subject in subjects:
     raw = []
     ################ READ DATA ################################################
     print "Reading train.."
-    fnames =  ['../../data/train/subj%d_series%d_data.csv' % (subject,i) for i in range(1,7)]
+    fnames =  ['../input/train/subj%d_series%d_data.csv' % (subject,i) for i in range(1,7)]
     for fname in fnames:
       data,labels=prepare_data_train(fname)
       raw.append(data)
@@ -184,7 +183,7 @@ for subject in subjects:
 
     ################ Read test data #####################################
     print "Reading test.."
-    fnames =  ['../../data/train/subj%d_series%d_data.csv' % (subject,i) for i in range(7,9)]
+    fnames =  ['../input/train/subj%d_series%d_data.csv' % (subject,i) for i in range(7,9)]
     test = []
     idx=[]
     for fname in fnames:
@@ -256,3 +255,7 @@ submission = pd.DataFrame(index=np.concatenate(ids_tot),
 
 # write file
 submission.to_csv(submission_file,index_label='id',float_format='%.3f')
+import subprocess
+if subx==12 and cl==6:
+    cmd='rm h5file/*'
+    subprocess.call(cmd,shell=True)
