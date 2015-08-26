@@ -21,7 +21,7 @@ import h5py
 import sys
 
 subx=int(sys.argv[1])
-clf=int(sys.argv[2])
+cl=int(sys.argv[2])
 electrode=int(sys.argv[3])
 
 subjects = range(subx,subx+1)
@@ -248,7 +248,7 @@ for subject in subjects:
     pred_tot.append(pred)
 
 # submission file
-submission_file = 'cv/try_clf%d_sub%d_trode%d.csv'%(cl,subx,electrode)
+submission_file = 'cv/try_subf%d_clf%d_trode%d.csv'%(subx,cl,electrode)
 # create pandas object for sbmission
 submission = pd.DataFrame(index=np.concatenate(ids_tot),
                           columns=cols,
