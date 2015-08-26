@@ -1,6 +1,6 @@
 to run:
 
-  mkdir h5file
+  mkdir h5file cv sub
   
   python write_script.py
   
