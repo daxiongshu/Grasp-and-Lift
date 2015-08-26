@@ -248,7 +248,7 @@ for subject in subjects:
     pred_tot.append(pred)
 
 # submission file
-submission_file = 'cv/try_subf%d_clf%d_trode%d.csv'%(subx,cl,electrode)
+submission_file = 'cv/try_sub%d_clf%d_trode%d.csv'%(subx,cl,electrode)
 # create pandas object for sbmission
 submission = pd.DataFrame(index=np.concatenate(ids_tot),
                           columns=cols,
