@@ -33,11 +33,11 @@ pbest=pd.read_csv('../vali-stack_srk1/vali1_3_new_cv.csv') # just a placeholder,
 for name in names:
     pbest[name]=0.0
 import os
-for fname in os.listdir('.'):
+for fname in os.listdir('cv'):
     if '.csv' not in fname:
         continue
     
-    sub2=pd.read_csv(fname)
+    sub2=pd.read_csv('cv/'+fname)
     
     subject=str(fname.split('.')[0][10:])
     mask=np.array(real['subject']==subject)
