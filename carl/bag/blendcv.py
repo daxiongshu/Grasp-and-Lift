@@ -74,4 +74,4 @@ for fname in os.listdir('cv'):
     
 
 
-pbest.to_csv('all.csv',index=False)
+pbest.to_csv('allcv.csv',index=False)
