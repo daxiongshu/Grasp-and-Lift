@@ -49,6 +49,7 @@ for subk in range(1,13):
             X=np.array(sub2[names])
         else:
             X=np.hstack((X,np.array(sub2[names])))
+    # column stack all the models, X.shape[1]=num_electrode * num_classifier * num_events
 
     print 'predict sub%d'%subk, X.shape
     mask=np.array(real['subject']==str(subk))  
