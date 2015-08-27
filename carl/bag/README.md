@@ -6,4 +6,6 @@ to run:
   
   sh run.sh
   
-  python blendcv.py
+  python blendxgbcv.py
+  
+  #don't run this, bad performance, python blendcv.py 
