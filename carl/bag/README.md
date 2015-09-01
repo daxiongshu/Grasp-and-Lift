@@ -17,3 +17,9 @@ to rub submission:
   sh runsub.sh
   
   python xgbcombine.py
+  
+to run stacking:
+
+  python stackcv.py
+  
+  python stacksub.py
