@@ -7,15 +7,7 @@ from collections import Counter
 from sklearn import metrics
 import h5py
 
-########################################
-# this stacking uses the base model vali1_cv.csv
-# which uses past feature only
-# vali1_cv auc: 0.911
-# after stacking
-# stack1_cv  auc: 0.931
-# 
 
-########################################
 def train_predict(X,y,Xt,yt=[],c=1):
     if c==1:
         #clf=xgb_classifier(num_round=45,eta=0.1,min_child_weight=5,depth=10, subsample=0.5,col=1) 
