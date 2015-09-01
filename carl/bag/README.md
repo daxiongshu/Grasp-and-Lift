@@ -1,4 +1,4 @@
-to run:
+to run cv:
 
   mkdir h5file cv sub
   
@@ -9,3 +9,11 @@ to run:
   python blendxgbcv.py
   
   #don't run this, bad performance, python blendcv.py 
+
+to rub submission:
+
+  python write_script_sub.py
+  
+  sh runsub.sh
+  
+  python xgbcombine.py
